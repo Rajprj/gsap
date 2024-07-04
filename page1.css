@@ -1,0 +1,120 @@
+/* ===========PAGE1========== */
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.133);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#page1 h1{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+    /* display: none; */
+    /* padding: 2vw 0; */
+    transform: translateY(25px);
+    display: inline-block;
+}
+
+#page1 h1 svg{
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    background-color: rgb(150, 210, 230);
+    transition: 0.2s ease;
+}
+#page1 h1 svg:hover{
+    transform:rotate(-45deg);
+    height: 5vw;
+    width: 5vw;
+    cursor: pointer;
+}
+
+#page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+    font-size: 1.3vw;
+}
+
+#page1 #speciality{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    }
+    
+    #page1 #speciality h4{
+        font-size: 1.2vw;
+        font-weight: 200;
+        padding: 4px 8px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-left: 7px;
+}
+#page1 #speciality h4:nth-last-child(2){
+    border: none;
+    padding: 3px;
+}
+
+#moving-div{
+    /* background-color: red; */
+    position: absolute;
+    bottom: -2%;
+    width: 54%;
+    white-space: nowrap;
+    padding: 1.1vw 0;
+    overflow: hidden;
+    /* margin-bottom: 2vw; */
+    /* display: flex; */
+}
+#moving-div .move{
+    display: inline-block;
+    animation: move 21s infinite linear;
+}
+
+#moving-div .move img{
+    height: 4.3vw;
+    transition: 1s ease;
+    margin: 0 .5vw;
+}
+.move img:hover{
+    transform: scale(1.6);
+}
+
+#blur-left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to left,transparent,#FFF);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+#blur-right{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right,transparent,#FFF);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+/* ------------ANIMATION------------ */
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

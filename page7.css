@@ -1,0 +1,86 @@
+#page7{
+    height: 100vh;
+    width: 100%;
+    padding: 5vw 10vw;
+    position: relative;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_box{
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    /* background-color: rgb(7, 13, 101); */
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    /* padding: 4vw 0vw; */
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.first-container_box{
+    width: 30%;
+}
+
+.svgImg{
+    height: 9vw;
+    width: 9vw;
+    transform: rotate(0deg);
+}
+
+
+.sec-container_box{
+    width: 70%;
+}
+.sec-container_box p{
+    font-size: 2.2vw;
+    color: #fff;
+}
+
+.sec-container_box p span{
+    width: 17vw;
+    float: left;
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: 300;
+    letter-spacing: 3px;
+    height: 5vw;color: #fff;
+}
+
+.second_container{
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.left_para{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    height: 100%;
+    width: 60%;
+    /* background-color: yellow; */
+}
+.left_para p{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight:700;
+    font-size: 1.6vw;
+}
+.right_para{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.right_para h1{
+    font-size: 4vw;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}

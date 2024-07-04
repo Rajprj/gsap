@@ -1,0 +1,42 @@
+@media (max-width:1200px) {
+    #page2{
+        height: 98vh;
+    }
+    
+    #page2-left{
+        height: 88%;
+    }
+}
+
+@media (max-width:1100px) {
+   
+    #page2-right{
+        height: 90%;
+    }
+
+    form input[type=submit] {
+        font-size: 0.8em;
+        background-size: 15px 56px;
+    }
+
+    #page3-box{
+        height: 70vh;
+    }
+
+    .detail-contents p{
+        font-size: 1.3vw;
+    }
+
+}
+@media (max-width:1000px) {
+    #page2-left{
+        height: 78%;
+    }
+    #page2-right{
+        height: 80%;
+    }
+
+    #page3-box{
+        height: 62vh;
+    }
+}

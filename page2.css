@@ -1,0 +1,93 @@
+/* -------PAGE2-------- */
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.133);
+    position: relative;
+    margin-top: 5vw;
+    border-top: 1px solid rgb(100, 99, 99);
+    padding: 2.5vw 9.8vw;
+}
+.pages{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-left{
+    height: 100%;
+    width: 40%;
+    padding: 5vw 0;
+    /* padding: 0 11vw; */
+    /* background-color: rgb(231, 231, 237); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+#page2-left p{
+    font-size: 1.2vw;
+}
+
+#page2-left h5{
+    width: 84%;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+#page2-right{
+    height: 100%;
+    width: 53%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border-top: 5px solid black; */
+    /* background-color: rgb(231, 231, 237); */
+}
+
+
+.right-elem{
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+    padding-top: 1.5vw;
+    padding-bottom: 5vw;
+    transition: all ease 0.1s;
+    border-bottom: 1px solid rgb(100, 99, 99);
+}
+.right-elem:hover{
+    border-bottom: 2px solid #111;
+}
+
+.right-elem h2{
+    text-transform: capitalize;
+    font-size: 1.5vw;
+  
+    font-weight: 400;
+}
+
+.right-elem img{
+    /* transition: all ease 0.3s; */
+    scale: 0;
+  
+    position: absolute;
+    height: 6.4vw;
+    width: 6.4vw;
+    border-radius: 50px;
+    object-fit: cover;
+    opacity: 0;
+}
+.right-elem:nth-child(3) img{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+.right-elem:nth-child(2) img{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.right-elem:last-child img{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
